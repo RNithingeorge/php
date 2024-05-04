@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<form action="" method="post">
+    Number 1: <input type="number" name="first" min="0"><br/><br/>
+    Number 2: <input type="number" name="second" min="0"><br/><br/>
+    Number 3: <input type="number" name="third" min="0"><br/><br/>
+    <input type="submit"><br/>
+</form>
+</body>
+</html>
+<?php
+if ($_POST) {
+    $number1 = $_POST['first'];
+    $number2 = $_POST['second'];
+    $number3 = $_POST['third'];
+    $largestNumber = max($number1, $number2, $number3);
+    echo "Largest number: " . $largestNumber;
+}
+?>
