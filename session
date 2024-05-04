@@ -1,0 +1,49 @@
+#sesion creation...................................
+<?php
+session_start();
+?>
+
+<html>
+<body>
+
+<?php
+$_SESSION["FavColor"] = "Green";
+$_SESSION["FavAnimal"] = "Cat";
+echo "Session started and setting Session Variables completed";
+?>
+
+</body>
+</html>
+
+#session display.................................
+<?php
+session_start();
+?>
+
+<html>
+<body>
+
+<?php
+echo "Favourite color is: " . $_SESSION["FavColor"] . "<br>";
+echo "Favourite animal is: " . $_SESSION["FavAnimal"] . ".";
+?>
+
+</body>
+</html>
+
+#SESSION DELETE..................................
+<?php
+session_start();
+?>
+
+<html>
+<body>
+
+<?php
+session_unset();
+session_destroy();
+echo "Your session has stopped / Destroyed";
+?>
+
+</body>
+</html>
