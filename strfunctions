@@ -1,0 +1,39 @@
+<?php
+
+$str = "SRIADITYA";
+$str = strtolower($str);
+echo "Lowercase: " . $str;
+
+$str = "aditya degree college";
+$str = strtoupper($str);
+echo "Uppercase: " . $str;
+
+echo "<br><br>";
+
+$str = "Sriaditya";
+$str = ucfirst($str);
+echo "First character upper: " . $str;
+
+echo "<br><br>";
+
+$str = "SRIADITYA";
+$str = lcfirst($str);
+echo "First character lower: " . $str;
+
+echo "<br><br>";
+
+$str1 = "aditya degree college";
+$str1 = ucwords($str1);
+echo "First character upper in each word: " . $str1;
+
+echo "<br><br>";
+
+$str1 = strrev($str1);
+echo "Reverse: " . $str1;
+
+echo "<br><br>";
+
+$str1 = strlen($str1);
+echo "Length: " . $str1;
+
+?>
